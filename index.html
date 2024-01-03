@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="" class="navbar-brand">Pigpen Cipher</a>
+        <div class="d-flex">
+          <!-- <button class="btn btn-primary me-2" id="encode_decode">Encode</button> -->
+        </div>
+      </div>
+    </div>
+    <!-- END NAVBAR -->
+
+    <div class="container">
+      <div class="form-group">
+        <label for="">Alphabet</label>
+        <input
+          type="text"
+          class="form-control"
+          value="abcdefghijklmnopqrstuvwxyz"
+          readonly
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <hr />
+    </div>
+
+    <!-- input for alphabet -->
+    <div class="container">
+      <div class="form-group">
+        <label for="">Plain Text</label>
+        <textarea
+          id="inputAlphabet"
+          cols="20"
+          rows="5"
+          class="form-control"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="container mt-2">
+      <button class="btn btn-primary" id="btnSubmit">Submit</button>
+    </div>
+
+    <!-- ciper text -->
+    <div class="container">
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="form-group">
+        <label for="">Cipher Text</label>
+        <div id="imgResult"></div>
+        <div id="cipherResult"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr />
+    </div>
+
+    <div class="container mt-2">
+      <button class="btn btn-secondary" id="btnClear">Clear</button>
+    </div>
+    <div class="container my-4">
+      <h1>Question No.1</h1>
+      <h4>Guess the ciphered text</h4>
+      <div class="my-4">
+        <img src="img/1.png" alt="" />
+        <img src="img/12.png" alt="" />
+        <img src="img/12.png" alt="" />
+        <img src="img/1.png" alt="" />
+        <img src="img/14.png" alt="" />
+      </div>
+      <input type="text" />
+      <button class="btn-success">Submit</button>
+    </div>
+  </body>
+</html>
